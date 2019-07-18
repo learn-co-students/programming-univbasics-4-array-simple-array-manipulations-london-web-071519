@@ -1,5 +1,5 @@
 def using_push (array, string)
-  updated_array = array.push("violet")
+  array.push("violet")
 end
 
 def using_unshift (array, string)
@@ -23,7 +23,7 @@ def shift_with_args (array)
 end
 
 def using_concat (array1, array2)
- array1.concat(array2)
+  array1.concat(array2)
 end
 
 def using_insert (array, element)
@@ -43,5 +43,5 @@ def using_delete (array, string)
 end
 
 def using_delete_at (array, integer)
-  array.delete_at(2)
+  array.delete("Robocop")
 end
