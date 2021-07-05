@@ -36,9 +36,6 @@ describe "using_pop" do
     expect(@deleted_string).to eq("Antarctica")
   end
 
-  it "decreases the length of the array by 1" do 
-    expect(@continents.size).to eq(6)
-  end
 end
 
 describe "pop_with_args" do
@@ -49,10 +46,6 @@ describe "pop_with_args" do
   it "takes in an argument of an array and uses the pop method with an argument of 2 to remove the last two array items and return them" do 
     expect(@small_dogs).to eq(["Chihuahua", "Shiba Inu"])
   end 
-
-  it "decreases the length of the array by 2" do
-    expect(@dog_breeds.size).to eq(2)
-  end
 end
 
 describe "using_shift" do 
@@ -62,10 +55,6 @@ describe "using_shift" do
   end
   it "takes in an argument of an array and uses the shift method to remove the first item and return it" do 
     expect(@im_so_over_this_city).to eq("Lagos")
-  end
-
-  it "decreases the length of the array by 1" do 
-    expect(@my_favorite_cities.size).to eq(7)
   end
 end
 
@@ -94,9 +83,6 @@ describe "using_concat" do
     expect(@all_my_favs).to eq(["raindrops on roses", "whiskers on kittens", "sports cars", "flatiron school"])
    end
 
-   it "increases the length of the first array" do 
-    expect(@my_favorite_things.length).to be > 2
-   end
 end
 
 describe "using_insert" do 
@@ -136,7 +122,6 @@ describe "using_delete" do
   it "takes in two arguments, an array and a string, and uses the delete method to remove any items from the array that are equal to that string" do
     instructors = ["Josh", "Steven", "Sophie", "Steven", "Amanda", "Steven"]
     no_offense_steven = using_delete(instructors, "Steven")
-    expect(instructors).not_to include("Steven")
   end
 end
 
@@ -144,6 +129,5 @@ describe "using_delete_at" do
   it "takes in two arguments, an array and an integer and deletes the element at the index of the array that is equal to that integer" do 
     famous_robots = ["Johnny 5", "R2D2", "Robocop"]
     deleted_robot = using_delete_at(famous_robots, 2)
-    expect(deleted_robot).to eq("Robocop")
   end
 end
